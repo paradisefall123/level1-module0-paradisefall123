@@ -61,7 +61,7 @@ public class DrumKit implements MouseListener {
 		drumLabelWithImage.addMouseListener(this);
 		// 18. Add more images to make a drumkit. Remember to add this mouse listener to
 		// each one.
-		System.out.println("mouseY");
+		System.out.println(mouseY);
 	}
 
 	public void mouseClicked(MouseEvent e) {
