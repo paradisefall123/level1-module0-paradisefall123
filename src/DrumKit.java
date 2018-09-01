@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 public class DrumKit implements MouseListener {
-
+	
 	JLabel drumLabelWithImage;
 
 	public static void main(String[] args) throws Exception {
@@ -28,6 +28,7 @@ public class DrumKit implements MouseListener {
 	}
 
 	private void getGoing() throws MalformedURLException {
+		
 		// 1. Make a JFrame variable and initialize it using "new JFrame()"
 		JFrame frame = new JFrame();
 		// 2. Make the frame visible and
@@ -61,13 +62,18 @@ public class DrumKit implements MouseListener {
 		drumLabelWithImage.addMouseListener(this);
 		// 18. Add more images to make a drumkit. Remember to add this mouse listener to
 		// each one.
-		System.out.println(mouseY);
+		
+		
 	}
 
 	public void mouseClicked(MouseEvent e) {
+	int mouseY= e.getY();
+	int mouseX= e.getX();
 		// 14. Print "mouse clicked" to the console. Run your program and watch the
 		// console to see when this is printed
 		System.out.println("mouse clicked");
+		System.out.println("mouse x: " + e.getX());
+		System.out.println("mouse y:" +e.getY());
 
 		JLabel drumClicked = (JLabel) e.getSource(); // This line gets the label that the mouse clicked on
 
@@ -75,9 +81,13 @@ public class DrumKit implements MouseListener {
 		// find it on freesound.org. To download it, log in as
 		// leagueofamazing/code4life.
 		// 16. If they clicked on the drumImage...
-		if (SwingUtilities.isLeftMouseButton(e)) {
-			playSound("bass.aiff");
-		}//else if(e.getY()))
+		if (mouseX >= 109 && mouseX <= 406 && mouseY>= 100 && mouseY<= 180) {
+			playSound("symbol.aiff");
+		
+		}else if(mouseX>=906 && mouseX<= 1156 && mouseY>= 291 && mouseY<= 310) {
+			playSound("hihat.aiff");
+		}//else if()
+		//else if(e.getY()))
 		// 17. ...use the playSound method to play a drum sound. Test to see if it works
 
 	}
