@@ -76,7 +76,6 @@ public class DrumKit implements MouseListener {
 		System.out.println("mouse y:" +e.getY());
 
 		JLabel drumClicked = (JLabel) e.getSource(); // This line gets the label that the mouse clicked on
-
 		// 15. Download a drum sound and drop it into your "default package". You can
 		// find it on freesound.org. To download it, log in as
 		// leagueofamazing/code4life.
@@ -86,7 +85,12 @@ public class DrumKit implements MouseListener {
 		
 		}else if(mouseX>=906 && mouseX<= 1156 && mouseY>= 291 && mouseY<= 310) {
 			playSound("hihat.aiff");
-		}//else if()
+		}else if(mouseX>=773 && mouseX<=931 && mouseY>=387 && mouseY<=508){
+			playSound("snaredrum.wav");
+		} else if(mouseX>=340 && mouseX<=703 && mouseY>= 559 && mouseY<=937){
+			playSound("bassdrum.wav");
+		}
+		//else if()
 		//else if(e.getY()))
 		// 17. ...use the playSound method to play a drum sound. Test to see if it works
 
