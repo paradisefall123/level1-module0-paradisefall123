@@ -81,14 +81,22 @@ public class DrumKit implements MouseListener {
 		// leagueofamazing/code4life.
 		// 16. If they clicked on the drumImage...
 		if (mouseX >= 109 && mouseX <= 406 && mouseY>= 100 && mouseY<= 180) {
-			playSound("symbol.aiff");
+			playSound("cymball.wav");
 		
-		}else if(mouseX>=906 && mouseX<= 1156 && mouseY>= 291 && mouseY<= 310) {
-			playSound("hihat.aiff");
+		}else if(mouseX>=910 && mouseX<= 1147 && mouseY>= 273 && mouseY<= 309) {
+			playSound("hihatt.wav");
 		}else if(mouseX>=773 && mouseX<=931 && mouseY>=387 && mouseY<=508){
 			playSound("snaredrum.wav");
 		} else if(mouseX>=340 && mouseX<=703 && mouseY>= 559 && mouseY<=937){
 			playSound("bassdrum.wav");
+		}else if(mouseX>=210 && mouseX<=343 && mouseY>=349 && mouseY<=614) {
+			playSound("lowtom.wav");
+		}else if(mouseX>=353 && mouseX<=580 && mouseY>=241) {
+			playSound("middletom.wav");
+		}else if(mouseX>=592 && mouseX<=778 && mouseY>=258 && mouseY<=417) {
+			playSound("hightomm.wav");
+			System.out.println("Tom");
+			
 		}
 		//else if()
 		//else if(e.getY()))
