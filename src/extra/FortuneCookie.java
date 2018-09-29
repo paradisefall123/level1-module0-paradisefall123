@@ -1,5 +1,6 @@
 package extra;
 
+import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -23,7 +24,8 @@ public class FortuneCookie implements ActionListener {
 		frame.setVisible(true);
 		frame.add(button);
 		button.addActionListener(this);
-
+		String url="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiippH46uDdAhUaIDQIHQGSDUAQjRx6BAgBEAU&url=https%3A%2F%2Fwww.retro-gression.com%2Fproducts%2Ffortune-cookie&psig=AOvVaw1wqcO0AV4Xy1u0xMNJzwFX&ust=1538331870077540";
+	 	Component image;
 	}
 
 	@Override
