@@ -3,9 +3,7 @@ int randomNumber = (int)random(900);
 int score=0;
 void draw() {
   background(70, 70, 72);
-
-
-  yposition++;
+  yposition+=10;
   fill(98, 175, 232);
   stroke(30, 81, 118);
   ellipse(randomNumber, yposition, 20, 40);
