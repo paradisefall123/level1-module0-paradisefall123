@@ -1,10 +1,15 @@
 
 
 public class Duck {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	String favoriteFood;
+	int numberOfFriends;
+	
+			
 	}
+	public Duck(String favoriteFood, int numberOfFriends) {
+      	this.favoriteFood = favoriteFood;
+      	this.numberOfFriends = numberOfFriends;
+}
+
 
 }
