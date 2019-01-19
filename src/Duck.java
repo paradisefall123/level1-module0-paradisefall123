@@ -1,17 +1,17 @@
-//import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;
 
-//public class Duck {
-	//String favoriteFood;
-	//int numberOfFriends;
+public class Duck {
+	String favoriteFood;
+	int numberOfFriends;
 
-	//public Duck(String favoriteFood, int numberOfFriends) {
-	//	this.favoriteFood = favoriteFood;
-		//this.numberOfFriends = numberOfFriends;
-	//}
+	public Duck(String favoriteFood, int numberOfFriends) {
+		this.favoriteFood = favoriteFood;
+		this.numberOfFriends = numberOfFriends;
+	}
 
-	//public void quack() {
+	public void quack() {
 		// TODO Auto-generated method stub
-	//	JOptionPane.showMessageDialog(null, "quack");
-	//}
+	JOptionPane.showMessageDialog(null, "quack");
+	}
 
-//}
+}
